@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalAmount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/enterBillAmount"
+        android:layout_width="255dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="541dp"
+        android:ems="10"
+        android:hint="Enter Bill Amount"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/eighteenPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/twentyPercent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fifteenPercent"
+        app:layout_constraintTop_toBottomOf="@+id/enterBillAmount"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <Button
+        android:id="@+id/fifteenPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eighteenPercent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterBillAmount"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <Button
+        android:id="@+id/twentyPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eighteenPercent"
+        app:layout_constraintTop_toBottomOf="@+id/enterBillAmount"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <TextView
+        android:id="@+id/finalAmount"
+        android:layout_width="276dp"
+        android:layout_height="34dp"
+        android:text="Tip: $0, Total Bill: $0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eighteenPercent"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
